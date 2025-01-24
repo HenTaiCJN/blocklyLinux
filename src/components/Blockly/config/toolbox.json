@@ -1,0 +1,1148 @@
+{
+    "kind": "categoryToolbox",
+    "contents": [
+        {
+            "kind": "category",
+            "name": "逻辑",
+            "categorystyle": "logic_category",
+            "contents": [
+                {
+                    "kind": "block",
+                    "type": "controls_if"
+                },
+                {
+                    "kind": "block",
+                    "type": "logic_compare"
+                },
+                {
+                    "kind": "block",
+                    "type": "logic_operation"
+                },
+                {
+                    "kind": "block",
+                    "type": "logic_negate"
+                },
+                {
+                    "kind": "block",
+                    "type": "logic_boolean"
+                },
+                {
+                    "kind": "block",
+                    "type": "logic_null"
+                },
+                {
+                    "kind": "block",
+                    "type": "logic_in"
+                }
+            ]
+        },
+        {
+            "kind": "category",
+            "name": "循环",
+            "categorystyle": "loop_category",
+            "contents": [
+                {
+                    "kind": "block",
+                    "type": "controls_whileUntil"
+                },
+                {
+                    "kind": "block",
+                    "type": "controls_for",
+                    "inputs": {
+                        "FROM": {
+                            "block": {
+                                "type": "math_number",
+                                "fields": {
+                                    "NUM": 1
+                                }
+                            }
+                        },
+                        "TO": {
+                            "block": {
+                                "type": "math_number",
+                                "fields": {
+                                    "NUM": 10
+                                }
+                            }
+                        },
+                        "BY": {
+                            "block": {
+                                "type": "math_number",
+                                "fields": {
+                                    "NUM": 1
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "controls_forEach"
+                },
+                {
+                    "kind": "block",
+                    "type": "controls_flow_statements"
+                }
+            ]
+        },
+        {
+            "kind": "category",
+            "name": "数字",
+            "categorystyle": "math_category",
+            "contents": [
+                {
+                    "kind": "block",
+                    "type": "math_number",
+                    "fields": {
+                        "NUM": 123
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "math_arithmetic",
+                    "fields": {
+                        "OP": "ADD"
+                    },
+                    "inputs": {
+                        "A": {
+                            "shadow": {
+                                "type": "math_number",
+                                "fields": {
+                                    "NUM": 1
+                                }
+                            }
+                        },
+                        "B": {
+                            "shadow": {
+                                "type": "math_number",
+                                "fields": {
+                                    "NUM": 1
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "math_mod",
+                    "inputs": {
+                        "value_value_1": {
+                            "shadow": {
+                                "type": "math_number",
+                                "fields": {
+                                    "NUM": 8
+                                }
+                            }
+                        },
+                        "value_value_2": {
+                            "shadow": {
+                                "type": "math_number",
+                                "fields": {
+                                    "NUM": 2
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "math_single",
+                    "inputs": {
+                        "NUM": {
+                            "shadow": {
+                                "type": "math_number",
+                                "fields": {
+                                    "NUM": 8
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "math_round",
+                    "inputs": {
+                        "NUM": {
+                            "shadow": {
+                                "type": "math_number",
+                                "fields": {
+                                    "NUM": 3.1
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "math_on_list"
+                },
+                {
+                    "kind": "block",
+                    "type": "math_random_int",
+                    "inputs": {
+                        "FROM": {
+                            "shadow": {
+                                "type": "math_number",
+                                "fields": {
+                                    "NUM": 1
+                                }
+                            }
+                        },
+                        "TO": {
+                            "shadow": {
+                                "type": "math_number",
+                                "fields": {
+                                    "NUM": 100
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "kind": "category",
+            "name": "字符",
+            "categorystyle": "text_category",
+            "contents": [
+                {
+                    "kind": "block",
+                    "type": "text"
+                },
+                {
+                    "kind": "block",
+                    "type": "text_join"
+                },
+                {
+                    "kind": "block",
+                    "type": "text_length",
+                    "inputs": {
+                        "VALUE": {
+                            "shadow": {
+                                "type": "text",
+                                "fields": {
+                                    "TEXT": "abc"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "text_indexOf",
+                    "inputs": {
+                        "VALUE": {
+                            "shadow": {
+                                "type": "variables_get",
+                                "fields": {
+                                    "VAR": "text"
+                                }
+                            }
+                        },
+                        "FIND": {
+                            "shadow": {
+                                "type": "text",
+                                "fields": {
+                                    "TEXT": "abc"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "text_charAt",
+                    "inputs": {
+                        "VALUE": {
+                            "shadow": {
+                                "type": "variables_get",
+                                "fields": {
+                                    "VAR": "text"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "text_getSubstring",
+                    "inputs": {
+                        "STRING": {
+                            "shadow": {
+                                "type": "variables_get",
+                                "fields": {
+                                    "VAR": "text"
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "kind": "category",
+            "name": "列表",
+            "categorystyle": "list_category",
+            "contents": [
+                {
+                    "kind": "block",
+                    "type": "lists_create_with",
+                    "extraState": {
+                        "itemCount": 1
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "lists_create_with"
+                },
+                {
+                    "kind": "block",
+                    "type": "lists_length"
+                },
+                {
+                    "kind": "block",
+                    "type": "lists_getIndex",
+                    "inputs": {
+                        "VALUE": {
+                            "shadow": {
+                                "type": "variables_get",
+                                "fields": {
+                                    "VAR": "list"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "lists_setIndex",
+                    "inputs": {
+                        "LIST": {
+                            "shadow": {
+                                "type": "variables_get",
+                                "fields": {
+                                    "VAR": "list"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "lists_getSublist",
+                    "inputs": {
+                        "LIST": {
+                            "shadow": {
+                                "type": "variables_get",
+                                "fields": {
+                                    "VAR": "list"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "lists_sort"
+                }
+            ]
+        },
+        {
+            "kind": "category",
+            "name": "变量",
+            "categorystyle": "variable_category",
+            "contents": [
+                {
+                    "kind": "block",
+                    "type": "var_set",
+                    "inputs": {
+                        "value_var_name_": {
+                            "shadow": {
+                                "type": "text",
+                                "fields": {
+                                    "TEXT": "x"
+                                }
+                            }
+                        },
+                        "value_var_v_": {}
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "var_use",
+                    "inputs": {
+                        "value_var_name_": {
+                            "shadow": {
+                                "type": "text",
+                                "fields": {
+                                    "TEXT": "x"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "var_use_global",
+                    "inputs": {
+                        "value_var_name_": {
+                            "shadow": {
+                                "type": "text",
+                                "fields": {
+                                    "TEXT": "x"
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "kind": "category",
+            "name": "函数",
+            "categorystyle": "procedure_category",
+            "contents": [
+                {
+                    "kind": "block",
+                    "type": "func",
+                    "inputs": {
+                        "value_func_name_": {
+                            "shadow": {
+                                "type": "text",
+                                "fields": {
+                                    "TEXT": ""
+                                }
+                            }
+                        },
+                        "value_func_param_": {
+                            "shadow": {
+                                "type": "text",
+                                "fields": {
+                                    "TEXT": ""
+                                }
+                            }
+                        },
+                        "value_func_return_": {}
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "func_use",
+                    "inputs": {
+                        "value_func_name_": {
+                            "shadow": {
+                                "type": "text",
+                                "fields": {
+                                    "TEXT": ""
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "kind": "category",
+            "name": "字典",
+            "categorystyle": "dict_category",
+            "contents": [
+                {
+                    "kind": "block",
+                    "type": "dict_creat",
+                    "inputs": {
+                        "value_dict_name": {
+                            "shadow": {
+                                "type": "text",
+                                "fields": {
+                                    "TEXT": "x"
+                                }
+                            }
+                        },
+                        "value_dict_init": {
+                            "shadow": {
+                                "type": "text",
+                                "fields": {
+                                    "TEXT": "{\"name\":\"Alex\"}"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "dict_key_get",
+                    "inputs": {
+                        "value_dict_name": {
+                            "shadow": {
+                                "type": "text",
+                                "fields": {
+                                    "TEXT": "x"
+                                }
+                            }
+                        },
+                        "value_dict_key_": {
+                            "shadow": {
+                                "type": "text",
+                                "fields": {
+                                    "TEXT": "name"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "dict_value_add",
+                    "inputs": {
+                        "value_dict_name": {
+                            "shadow": {
+                                "type": "text",
+                                "fields": {
+                                    "TEXT": "x"
+                                }
+                            }
+                        },
+                        "value_dict_add": {
+                            "shadow": {
+                                "type": "text",
+                                "fields": {
+                                    "TEXT": "{\"age\":16}"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "dict_key_del",
+                    "inputs": {
+                        "value_dict_name": {
+                            "shadow": {
+                                "type": "text",
+                                "fields": {
+                                    "TEXT": "x"
+                                }
+                            }
+                        },
+                        "value_dict_key_": {
+                            "shadow": {
+                                "type": "text",
+                                "fields": {
+                                    "TEXT": "name"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "json_to_dict",
+                    "inputs": {
+                        "value_json": {},
+                        "value_dict_name": {
+                            "shadow": {
+                                "type": "text",
+                                "fields": {
+                                    "TEXT": "x"
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "kind": "category",
+            "name": "输入",
+            "categorystyle": "input_category",
+            "contents": [
+                {
+                    "kind": "block",
+                    "type": "wait_time",
+                    "inputs": {
+                        "value_time_": {
+                            "shadow": {
+                                "type": "math_number",
+                                "fields": {
+                                    "NUM": "1"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "hcsr",
+                    "inputs": {
+                        "value_road_trig": {
+                            "shadow": {
+                                "type": "pins"
+                            }
+                        },
+                        "value_road_echo": {
+                            "shadow": {
+                                "type": "pins"
+                            }
+                        },
+                        "value_road_port": {
+                            "shadow": {
+                                "type": "ports"
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "singlebutton",
+                    "inputs": {
+                        "value_road_": {
+                            "shadow": {
+                                "type": "port_all"
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "btn"
+                },
+                {
+                    "kind": "block",
+                    "type": "dhtsensor",
+                    "inputs": {
+                        "value_road_": {
+                            "shadow": {
+                                "type": "port_all"
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "ds18b20",
+                    "inputs": {
+                        "value_road_": {
+                            "shadow": {
+                                "type": "port_all"
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "tsd",
+                    "inputs": {
+                        "value_road_": {
+                            "shadow": {
+                                "type": "port_all"
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "lightsensor",
+                    "inputs": {
+                        "value_road_": {
+                            "shadow": {
+                                "type": "port_all"
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "soundsensor",
+                    "inputs": {
+                        "value_road_": {
+                            "shadow": {
+                                "type": "port_all"
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "compass_more",
+                    "inputs": {
+                        "value_road_sda": {
+                            "shadow": {
+                                "type": "pins"
+                            }
+                        },
+                        "value_road_scl": {
+                            "shadow": {
+                                "type": "pins"
+                            }
+                        },
+                        "value_road_port": {
+                            "shadow": {
+                                "type": "ports"
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "atmos",
+                    "inputs": {
+                        "value_road_sda": {
+                            "shadow": {
+                                "type": "pins"
+                            }
+                        },
+                        "value_road_scl": {
+                            "shadow": {
+                                "type": "pins"
+                            }
+                        },
+                        "value_road_port": {
+                            "shadow": {
+                                "type": "ports"
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "accelerometer",
+                    "inputs": {
+                        "value_road_sda": {
+                            "shadow": {
+                                "type": "pins"
+                            }
+                        },
+                        "value_road_scl": {
+                            "shadow": {
+                                "type": "pins"
+                            }
+                        },
+                        "value_road_port": {
+                            "shadow": {
+                                "type": "ports"
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "rfid_init",
+                    "inputs": {
+                        "value_road_sda": {
+                            "shadow": {
+                                "type": "pins"
+                            }
+                        },
+                        "value_road_scl": {
+                            "shadow": {
+                                "type": "pins"
+                            }
+                        },
+                        "value_road_port": {
+                            "shadow": {
+                                "type": "ports"
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "rfid",
+                    "inputs": {
+                        "value_road_sda": {
+                            "shadow": {
+                                "type": "pins"
+                            }
+                        },
+                        "value_road_scl": {
+                            "shadow": {
+                                "type": "pins"
+                            }
+                        },
+                        "value_road_port": {
+                            "shadow": {
+                                "type": "ports"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "kind": "category",
+            "name": "输出",
+            "categorystyle": "output_category",
+            "contents": [
+                {
+                    "kind": "block",
+                    "type": "output_print"
+                },
+                {
+                    "kind": "block",
+                    "type": "motor_speed",
+                    "inputs": {
+                        "value_speed_": {
+                            "shadow": {
+                                "type": "math_number",
+                                "fields": {
+                                    "NUM": "100"
+                                }
+                            }
+                        },
+                        "value_road_in0": {
+                            "shadow": {
+                                "type": "pins"
+                            }
+                        },
+                        "value_road_in1": {
+                            "shadow": {
+                                "type": "pins"
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "play_tone",
+                    "inputs": {
+                        "value_tone_": {
+                            "shadow": {
+                                "type": "text",
+                                "fields": {
+                                    "TEXT": "[2000,3000]"
+                                }
+                            }
+                        },
+                        "value_delay_": {
+                            "shadow": {
+                                "type": "math_number",
+                                "fields": {
+                                    "NUM": "1"
+                                }
+                            }
+                        },
+                        "value_road_": {
+                            "shadow": {
+                                "type": "port_all"
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "servo_move",
+                    "inputs": {
+                        "value_angle_": {
+                            "shadow": {
+                                "type": "math_number",
+                                "fields": {
+                                    "NUM": "90"
+                                }
+                            }
+                        },
+                        "value_road_": {
+                            "shadow": {
+                                "type": "port_all"
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "oled_clear"
+                },
+                {
+                    "kind": "block",
+                    "type": "oled_print",
+                    "inputs": {
+                        "value_str_": {
+                            "shadow": {
+                                "type": "text",
+                                "fields": {
+                                    "TEXT": "Hello World!"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "set_rgb",
+                    "inputs": {
+                        "value_index_": {
+                            "shadow": {
+                                "type": "text",
+                                "fields": {
+                                    "TEXT": "[0,1,2]"
+                                }
+                            }
+                        },
+                        "value_color_r": {
+                            "shadow": {
+                                "type": "math_number",
+                                "fields": {
+                                    "NUM": "255"
+                                }
+                            }
+                        },
+                        "value_color_g": {
+                            "shadow": {
+                                "type": "math_number",
+                                "fields": {
+                                    "NUM": "255"
+                                }
+                            }
+                        },
+                        "value_color_b": {
+                            "shadow": {
+                                "type": "math_number",
+                                "fields": {
+                                    "NUM": "0"
+                                }
+                            }
+                        },
+                        "value_road_port": {
+                            "shadow": {
+                                "type": "ports"
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "rgb_clear",
+                    "inputs": {
+                        "value_road_port": {
+                            "shadow": {
+                                "type": "ports"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "kind": "category",
+            "name": "网络",
+            "categorystyle": "network_category",
+            "contents": [
+                {
+                    "kind": "block",
+                    "type": "wifi_conn",
+                    "inputs": {
+                        "value_ssid_": {
+                            "shadow": {
+                                "type": "text",
+                                "fields": {
+                                    "TEXT": ""
+                                }
+                            }
+                        },
+                        "value_psw_": {
+                            "shadow": {
+                                "type": "text",
+                                "fields": {
+                                    "TEXT": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "iot_conn",
+                    "inputs": {
+                        "value_server_": {
+                            "shadow": {
+                                "type": "text",
+                                "fields": {
+                                    "TEXT": "cloud.leihoorobot.com"
+                                }
+                            }
+                        },
+                        "value_port_": {
+                            "shadow": {
+                                "type": "math_number",
+                                "fields": {
+                                    "NUM": "1883"
+                                }
+                            }
+                        },
+                        "value_id_": {
+                            "shadow": {
+                                "type": "text",
+                                "fields": {
+                                    "TEXT": ""
+                                }
+                            }
+                        },
+                        "value_user_": {
+                            "shadow": {
+                                "type": "text",
+                                "fields": {
+                                    "TEXT": ""
+                                }
+                            }
+                        },
+                        "value_psd_": {
+                            "shadow": {
+                                "type": "text",
+                                "fields": {
+                                    "TEXT": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "msg_send",
+                    "inputs": {
+                        "value_topic_": {
+                            "shadow": {
+                                "type": "text",
+                                "fields": {
+                                    "TEXT": ""
+                                }
+                            }
+                        },
+                        "value_msg_": {
+                            "shadow": {
+                                "type": "text",
+                                "fields": {
+                                    "TEXT": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "msg_receive_do",
+                    "inputs": {
+                        "value_msg_": {
+                            "shadow": {
+                                "type": "text",
+                                "fields": {
+                                    "TEXT": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "msg_get_once",
+                    "inputs": {
+                        "value_msg_": {
+                            "shadow": {
+                                "type": "text",
+                                "fields": {
+                                    "TEXT": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "webcamera_conn",
+                    "inputs": {
+                        "value_id_": {
+                            "shadow": {
+                                "type": "text",
+                                "fields": {
+                                    "TEXT": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "webcamera_res"
+                }
+            ]
+        },
+        {
+            "kind": "category",
+            "name": "广播",
+            "categorystyle": "broadcast_category",
+            "contents": [
+                {
+                    "kind": "block",
+                    "type": "radio_init",
+                    "inputs": {
+                        "value_ssid_": {
+                            "shadow": {
+                                "type": "math_number",
+                                "fields": {
+                                    "NUM": "1"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "radio_switch"
+                },
+                {
+                    "kind": "block",
+                    "type": "radio_send",
+                    "inputs": {
+                        "value_msg_": {
+                            "shadow": {
+                                "type": "text",
+                                "fields": {
+                                    "TEXT": "abc"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "kind": "block",
+                    "type": "radio_setcb"
+                },
+                {
+                    "kind": "block",
+                    "type": "radio_recv"
+                }
+            ]
+        },
+        {
+            "kind": "category",
+            "name": "引脚",
+            "categorystyle": "pin_category",
+            "contents": [
+                {
+                    "kind": "block",
+                    "type": "pin_read_digital"
+                },
+                {
+                    "kind": "block",
+                    "type": "pin_write_digital"
+                },
+                {
+                    "kind": "block",
+                    "type": "pin_read_analog"
+                },
+                {
+                    "kind": "block",
+                    "type": "pin_write_analog",
+                    "inputs": {
+                        "value_pwm_": {
+                            "shadow": {
+                                "type": "math_number",
+                                "fields": {
+                                    "NUM": "0"
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
